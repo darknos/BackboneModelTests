@@ -1,0 +1,8 @@
+<Alloy>
+	<Window class="container" layout="vertical">
+		<Label id="text" dataBind="id" text="{id}" bindAttr="text"/>
+		<Label id="title" dataBind="title" bindAttr="text" text="{title1}"/>
+		<TextField dataBind="text_short" bindAttr="value" value="{text_short}"></TextField>
+		<Button onClick="next" title="Next"/>
+	</Window>
+</Alloy>

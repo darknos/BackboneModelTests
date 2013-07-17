@@ -1,0 +1,15 @@
+<Alloy>
+	<Collection src="feed" instance="true"/>
+    <Window class="container" navBarHidden="false">
+    	<NavigationGroup id="nav">
+    	<Window  title="hello">
+        <TableView dataCollection="feed">
+            <TableViewRow  article_id="{id}" onClick="rowClick" height="66" hasChild="true">
+            	<ImageView width="44" height="44" left="11" top="11" image="{article_image}"/>
+            	<Label text="{title}" left="66" right="11"></Label>
+            </TableViewRow>
+        </TableView>
+      </Window>
+        </NavigationGroup>
+    </Window>
+</Alloy>
